@@ -1,0 +1,6 @@
+services:
+  trafficroad:
+    image: trafficroad
+    build:
+      context: .
+      dockerfile: ./Dockerfile
