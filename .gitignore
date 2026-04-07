@@ -208,7 +208,4 @@ __marimo__/
 
 logs.log
 
-.vscode/*
-!.vscode/extensions.json
-!.vscode/launch.json
-!.vscode/tasks.json
+.vscode/
