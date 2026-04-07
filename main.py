@@ -88,12 +88,12 @@ class Game:
 # ==================== ЗАПУСК ИСХОДНИКА ====================
 if __name__ == "__main__":
     log = init_logger(
-        name = "TrafficRoad",  
+        name = "main",  
         colored = True, 
         log_file = "logs/logs.log",
         level = "DEBUG"
     )
-    log.info('Initiated logging system.')
+    log.info('Logger of main.py is initiated.')
 
     game = Game()
     game.run()

@@ -44,6 +44,9 @@ class Subject(ABC):
             observer (Observer): Наблюдатель
         """
         if observer not in self._observers:
+            if not isinstance(observer, Observer):
+                raise TypeError(f"Expected Observer, got {type(listener).__name__}")
+            
             self._observers.append(observer)
     
     def detach(self, observer: Observer):

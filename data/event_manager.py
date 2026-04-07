@@ -1,9 +1,12 @@
 """Central event manager that dispatches Pygame events to registered listeners."""
 
 import pygame
+
 from typing import List
+
 from data.interfaces.event_listeners import ClickListener, HoverListener, KeyListener
 
+from logs.logging_system import init_logger
 
 # ==================== МЕНЕДЖЕР СОБЫТИЙ ====================
 class EventManager:
@@ -31,6 +34,10 @@ class EventManager:
         Args:
             listener: ClickListener
         """
+        if not isinstance(listener, ClickListener):
+            log.critical(f"Expected ClickListener, got {type(listener).__name__}")
+            raise TypeError(f"Expected ClickListener, got {type(listener).__name__}")
+            
         self.click_listeners.append(listener)
 
     def register_hover_listener(self, listener: HoverListener):
@@ -40,6 +47,10 @@ class EventManager:
         Args:
             listener: HoverListener
         """
+        if not isinstance(listener, HoverListener):
+            log.critical(f"Expected HoverListener, got {type(listener).__name__}")
+            raise TypeError(f"Expected HoverListener, got {type(listener).__name__}")
+
         self.hover_listeners.append(listener)
 
     def register_key_listener(self, listener: KeyListener):
@@ -49,6 +60,10 @@ class EventManager:
         Args:
             listener: KeyListener
         """
+        if not isinstance(listener, KeyListener):
+            log.critical(f"Expected KeyListener, got {type(listener).__name__}")
+            raise TypeError(f"Expected KeyListener, got {type(listener).__name__}")
+        
         self.key_listeners.append(listener)
 
     def handle_events(self) -> bool:
@@ -79,3 +94,13 @@ class EventManager:
                     listener.on_key_up(event.key)
 
         return True
+    
+
+# ==================== ИНИЦИАЛИЗАЦИЯ ЛОГГЕРА ====================
+log = init_logger(
+        name = "eventmanager",  
+        colored = True, 
+        log_file = "logs/logs.log",
+        level = "DEBUG"
+    )
+log.info('Logger of event_manager.py is initiated.')
