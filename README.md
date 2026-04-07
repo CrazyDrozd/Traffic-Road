@@ -40,6 +40,8 @@ cd Traffic-Road
 pip install -r requirements.txt   # if you have one, otherwise install pygame manually
 ```
 
+---
+
 ## 🧠 What I've Learned (so far)
 * Applying SOLID in a real (small) Python project
 
@@ -53,6 +55,8 @@ pip install -r requirements.txt   # if you have one, otherwise install pygame ma
 
 * Experimenting with Docker
 
+---
+
 ## 🔮 Future Plans
 * Turn this into a production-ready architecture for daily use
 
@@ -62,5 +66,3 @@ pip install -r requirements.txt   # if you have one, otherwise install pygame ma
 
 * Fully test and polish Docker support
 
-## 📄 License
-*This project is currently for personal learning – no specific license yet. Feel free to use it as a reference, but please credit if you borrow significant parts.*
