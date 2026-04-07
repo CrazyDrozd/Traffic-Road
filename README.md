@@ -1,17 +1,66 @@
 # Traffic-Road
-> *"Architecture should speak of its time and place, but yearn for timelessness."* ~ ***Frank Gehry***
-> 
-> At the current moment this project serves no purpose other than being a template for my future PyGame works.
-A pet-project for coding practice and to get the hand of SOLID principles and architecture patterns, specifically to get used to Robert Martin coding features and stuff. Hopefully I would continue it's development to make a perfect architecture to use on a daily basis.
 
-## What things I used for this project:
-| Name | Description |
-| --- | --- |
-| OOP | Object-oriented programming obviously, duh. |
-| Interfaces | a.k.a Abstract classes and methods. |
-| Modules | Heey, by that I mean separating the entire codebase into a lot smaller code files in /data folder with __init__.py stuff. Works well with proper inheritance and importing. |
-| Dataclasses | Mostly for the main project config. |
-| Logging | I implemented simple, yet effective logging system that could further be used for proper error handling. |
-| Docstrings | Thought this would be an important part, whenever you hover on a specific class or method, it would explain it's own self in details. |
-| Type Hints | I know that Python has an automatic type detector in it's interpretor, however, it is widely practices to specify what types are used in the code to prevent possible TypeErrors.  |
-| Containerization | I haven't tested it yet, but the project has somewhat simpled Dockerfile that could be used for images and containers. |
+> *"Architecture should speak of its time and place, but yearn for timelessness."*  
+> — **Frank Gehry**
+
+## 🚧 About the Project
+
+At present, **Traffic-Road** is a clean, modular template for future PyGame projects.  
+It was built as a pet project to practice **SOLID principles**, **software architecture patterns**, and to get comfortable with Robert C. Martin's coding style and best practices.
+
+The ultimate goal is to evolve this into a reusable, well-architectured foundation that can be used daily for game development in Python.
+
+---
+
+## ✨ Key Features & Practices
+
+| Concept | How it's used |
+|---------|----------------|
+| **OOP** | Core structure – everything is object-oriented. |
+| **Interfaces** | Abstract base classes & methods to enforce contracts. |
+| **Modularisation** | Code split into small, logical files inside `/data` with proper `__init__.py` exports, inheritance, and imports. |
+| **Dataclasses** | Used primarily for main project configuration. |
+| **Logging** | Simple but effective logging system – ready for error handling and debugging. |
+| **Docstrings** | Detailed explanations for every class and method (visible on hover in most IDEs). |
+| **Type Hints** | Explicit type annotations to prevent `TypeError`s and improve maintainability. |
+| **Containerisation** | Basic Dockerfile included (not yet fully tested) for easy containerised execution. |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.8+
+- PyGame (install via `pip install pygame`)
+
+### Installation
+```bash
+git clone https://github.com/yourusername/Traffic-Road.git
+cd Traffic-Road
+pip install -r requirements.txt   # if you have one, otherwise install pygame manually
+```
+
+## 🧠 What I've Learned (so far)
+* Applying SOLID in a real (small) Python project
+
+* Using abstract classes to mimic interfaces
+
+* Keeping a clean module structure with __init__.py
+
+* Writing self-documenting code via docstrings + type hints
+
+* Thinking ahead with logging and error handling
+
+* Experimenting with Docker
+
+## 🔮 Future Plans
+* Turn this into a production-ready architecture for daily use
+
+* Add unit tests 
+
+* Implement actual traffic/road simulation logic
+
+* Fully test and polish Docker support
+
+## 📄 License
+*This project is currently for personal learning – no specific license yet. Feel free to use it as a reference, but please credit if you borrow significant parts.*
