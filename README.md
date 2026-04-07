@@ -1,5 +1,6 @@
 # Traffic-Road
-> *"Architecture should speak of its time and place, but yearn for timelessness." ~* ***Frank Gehry***
+> *"Architecture should speak of its time and place, but yearn for timelessness."* ~ ***Frank Gehry***
+> 
 > At the current moment this project serves no purpose other than being a template for my future PyGame works.
 A pet-project for coding practice and to get the hand of SOLID principles and architecture patterns, specifically to get used to Robert Martin coding features and stuff. Hopefully I would continue it's development to make a perfect architecture to use on a daily basis.
 
