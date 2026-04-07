@@ -9,6 +9,8 @@ from data.interfaces.event_listeners import KeyListener
 
 from data.ui.button import Button
 
+from logs.logging_system import init_logger
+
 
 # ==================== КЛАСС КНОПКИ ДЕБАГА ====================
 class DebugButton(Button):
@@ -35,6 +37,7 @@ class DebugOverlay(Drawable, KeyListener):
     def on_key_down(self, key: int):
         if key == pygame.K_F3:
             self.config.DEBUG = not self.config.DEBUG
+            log.debug(f'User pressed F3, DEBUG: {self.config.DEBUG}')
 
     def on_key_up(self, key: int):
         pass
@@ -60,3 +63,12 @@ class DebugOverlay(Drawable, KeyListener):
         x = self.target_button.rect.x + self.offset_x
         y = self.target_button.rect.y + self.offset_y
         screen.blit(self.surface, (x, y))
+
+# ==================== ИНИЦИАЛИЗАЦИЯ ЛОГГЕРА ====================
+log = init_logger(
+        name = "debug",  
+        colored = True, 
+        log_file = "logs/logs.log",
+        level = "DEBUG"
+    )
+log.info('Logger of debug.py is initiated.')
