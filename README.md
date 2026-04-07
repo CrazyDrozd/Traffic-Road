@@ -30,7 +30,7 @@ The ultimate goal is to evolve this into a reusable, well-architectured foundati
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.8 — 3.12
 - PyGame (install via `pip install pygame`)
 
 ### Installation

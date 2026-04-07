@@ -208,4 +208,4 @@ __marimo__/
 
 logs.log
 
-.vscode/
+.vscode/**/*
