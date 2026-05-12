@@ -45,24 +45,17 @@ pip install -r requirements.txt
 ---
 
 ## 🧠 What I've Learned (so far)
-* Applying SOLID in a real (small) Python project
-
-* Using abstract classes to mimic interfaces
-
-* Keeping a clean module structure with __init__.py
-
-* Writing self-documenting code via docstrings + type hints
-
-* Thinking ahead with logging and error handling
-
-* Experimenting with Docker
+> * Applying SOLID in a real (small) Python project
+> * Using abstract classes to mimic interfaces
+> * Keeping a clean module structure with __init__.py
+> * Writing self-documenting code via docstrings + type hints
+> * Thinking ahead with logging and error handling
+> * Experimenting with Docker
 
 ---
 
 ## 🔮 Future Plans
-* Turn this into a production-ready architecture for daily use
-
-* Add unit tests 
-
-* Fully test and polish Docker support
+> * Turn this into a production-ready architecture for daily use
+> * Add unit tests 
+> * Fully test and polish Docker support
 
